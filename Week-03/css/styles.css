@@ -1,0 +1,32 @@
+body {
+    font-family: Roboto;
+    background-color: blueviolet;
+    width: 1512px;
+    height: 982px;
+}
+
+main {
+
+}
+
+.header-main {
+    width: 1420px;
+    height: 140px;
+    background-color: #FFFFFF;
+    /*justify-content: space-between;*/
+}
+
+.button-menu {
+    float: left;
+}
+
+.header-title {
+    color: #373867;
+    opacity: .4;
+    float: left;
+    padding: 15px 0 0 20px;
+}
+
+.social-networks {
+    float: right;
+}
