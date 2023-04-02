@@ -1,32 +1,63 @@
 body {
     font-family: Roboto;
-    background-color: blueviolet;
+    background-color: #FFFFFF;
     width: 1512px;
     height: 982px;
 }
 
 main {
-
+    margin: 0 47px 0 47px;
 }
 
 .header-main {
-    width: 1420px;
+    width: 1418px;
     height: 140px;
     background-color: #FFFFFF;
+    border-bottom: 10px solid #AACE9B;
     /*justify-content: space-between;*/
 }
 
 .button-menu {
-    float: left;
+    width: 42px;
+    height: 42px;
+    margin: 10px 0 0 0;
+    background-color: #FFFFFF;
+    border-style: none;
 }
 
+/*.button-menu:hover {
+    background-color: grey;
+}*/
+
 .header-title {
-    color: #373867;
-    opacity: .4;
-    float: left;
-    padding: 15px 0 0 20px;
+    color: rgba(55, 56, 103, 0.4);
+    /*opacity: .4;*/
+    font-size: 30pt;
+    margin: 30px 0 0 0;
 }
 
 .social-networks {
+    float: right;
+}
+
+.social-networks img{
+    margin:0 20px;
+}
+
+.wellcome-content {
+    width: 1418px;
+    height: 905px;
+    background-color: rgba(170, 206, 155, 0.1);
+}
+
+.wk-section{
+    float: left;
+    width: 660px;
+    height: 693px;
+}
+
+.wk-image{
+    width: 677px;
+    height: 698px;
     float: right;
 }
