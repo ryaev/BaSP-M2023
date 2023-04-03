@@ -29,10 +29,10 @@ main {
     background-color: grey;
 }*/
 
-.header-title {
+.secondary-title {
     color: rgba(55, 56, 103, 0.4);
     /*opacity: .4;*/
-    font-size: 30pt;
+    font-size: 30px;
     margin: 30px 0 0 0;
 }
 
@@ -46,18 +46,46 @@ main {
 
 .wellcome-content {
     width: 1418px;
-    height: 905px;
+    height: 800px;
     background-color: rgba(170, 206, 155, 0.1);
 }
 
-.wk-section{
-    float: left;
+.wc-section{
     width: 660px;
     height: 693px;
+    float: left;
+    margin:51px 0;
 }
 
-.wk-image{
+.wc-image{
     width: 677px;
     height: 698px;
     float: right;
+    margin:51px 0;
+}
+
+.primary-title {
+    color: #373867;
+    font-size: 40px;
+}
+
+.opaque-text {
+    color: rgba(55, 56, 103, 0.4);
+    font-size: 20px;
+}
+
+.wc-button {
+    width: 154px;
+    height: 49px;
+    background-color: #AACE9B;
+    border-style: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: #373867;
+    border-radius: 7px;
+}
+
+.tertiary-title {
+    color: #373867;
+    font-size: 30px;
 }
