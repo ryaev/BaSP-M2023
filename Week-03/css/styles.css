@@ -97,7 +97,35 @@ main {
     border-radius: 7px;
 }
 
+.features-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 1418px;
+    height: 800px;
+    margin: 0 0 0 10px;
+    padding: 100px 0 0 0;  
+    align-content: flex-start;  
+}
+
+.fc-object {
+    height: 400px;
+    width: 700px;
+    flex: auto;
+}
+
 .tertiary-title {
     color: #373867;
     font-size: 30px;
 }
+
+.fc-text {
+    color: #373867;
+    font-size: 14px;
+    margin: 10px 10px 10px 0;
+}
+
+/*.icons {
+    width: 130px;
+    height: 130px;
+}*/
