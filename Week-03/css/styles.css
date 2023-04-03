@@ -93,7 +93,7 @@ main {
     border-radius: 7px;
 }
 
-.features-content {
+.features-activity-content {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -105,34 +105,76 @@ main {
     float: left;*/
 }
 
-.fc-content-image {
+.ft-at-image {
     height: 250px;
     width: 150px;
     padding: 50px 0 0 0;
     /*flex: auto;*/
 }
 
-.fc-content-text {
+.ft-at-text {
     height: 250px;
     width: 559px;
     /*flex: auto;*/
 }
 
-.fc-text {
+.ft-at-para {
     float: left;
     color: #373867;
     font-size: 14px;
     margin: 10px 170px 10px 0;
 }
 
-.fc-icons {
+.ft-at-icon {
     float: left;
     width: 130px;
     height: 130px;
 }
 
-.fc-primary-title {
+.ft-at-primary-title {
+    width: 559px;
     float:left;
     color: #373867;
     font-size: 40px;
+}
+
+.contact-content {
+    width: 1418px;
+    height: 500px;
+    display: block;
+    /*float: right;*/
+}
+
+.in-data {
+    width: 456px;
+    height: 37px;
+    border-radius: 7px;
+    border-color: #373867;
+}
+
+.in-select {
+    width: 716px;
+    height: 37px;
+    border-radius: 7px;
+    border-color: #373867;
+}
+
+.in-txtarea {
+    width: 1408px;
+    height: 216px;
+    border-radius: 7px;
+    border-color: #373867;
+}
+
+.lb-data {
+    font-size: 14px;
+    margin: 0 0 20px 0;
+    font-weight: bold;
+    color: #373867;
+    display: block;
+}
+
+.in-fields {
+    float: left;
+    margin: 0 8px 40px 0;
 }
