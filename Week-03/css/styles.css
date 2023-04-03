@@ -1,8 +1,8 @@
 body {
-    font-family: Roboto;
-    background-color: #FFFFFF;
     width: 1512px;
     height: 982px;
+    font-family: Roboto;
+    background-color: #FFFFFF;
 }
 
 main {
@@ -12,9 +12,7 @@ main {
 .header-main {
     width: 1418px;
     height: 140px;
-    background-color: #FFFFFF;
     border-bottom: 10px solid #AACE9B;
-    /*justify-content: space-between;*/
 }
 
 .button-menu {
@@ -25,20 +23,8 @@ main {
     border-style: none;
 }
 
-/*.button-menu:hover {
-    background-color: grey;
-}*/
-
-.header-secondary-title {
-    color: rgba(55, 56, 103, 0.4);
-    /*opacity: .4;*/
-    font-size: 30px;
+.header {
     margin: 45px 0 0 0;
-}
-
-.secondary-title {
-    color: rgba(55, 56, 103, 0.4);
-    font-size: 30px;
 }
 
 .social-networks {
@@ -67,12 +53,22 @@ main {
     width: 680px;
     height: 700px;
     float: right;
-    margin:51px 0;
+    margin: 51px 0;
 }
 
 .primary-title {
     color: #373867;
     font-size: 40px;
+}
+
+.secondary-title {
+    color: rgba(55, 56, 103, 0.4);
+    font-size: 30px;
+}
+
+.tertiary-title {
+    color: #373867;
+    font-size: 30px;
 }
 
 .opaque-text {
@@ -99,33 +95,44 @@ main {
 
 .features-content {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     width: 1418px;
-    height: 800px;
-    margin: 0 0 0 10px;
-    padding: 100px 0 0 0;  
-    align-content: flex-start;  
+    height: 500px;
+    margin: 0 0 100px 0;
+    /*padding: 0 10px 0 0;*/
+    /*align-content: flex-start;
+    float: left;*/
 }
 
-.fc-object {
-    height: 400px;
-    width: 700px;
-    flex: auto;
+.fc-content-image {
+    height: 250px;
+    width: 150px;
+    padding: 50px 0 0 0;
+    /*flex: auto;*/
 }
 
-.tertiary-title {
-    color: #373867;
-    font-size: 30px;
+.fc-content-text {
+    height: 250px;
+    width: 559px;
+    /*flex: auto;*/
 }
 
 .fc-text {
+    float: left;
     color: #373867;
     font-size: 14px;
-    margin: 10px 10px 10px 0;
+    margin: 10px 170px 10px 0;
 }
 
-/*.icons {
+.fc-icons {
+    float: left;
     width: 130px;
     height: 130px;
-}*/
+}
+
+.fc-primary-title {
+    float:left;
+    color: #373867;
+    font-size: 40px;
+}
