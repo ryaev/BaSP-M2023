@@ -211,7 +211,7 @@ hr {
     height: 3px;
     margin: 0;
     float: left;
-    background-color: #AACE9B;;
+    background-color: #AACE9B;
 }
 
 
@@ -265,4 +265,50 @@ hr {
     width: 1418px;
     height: 700px;
     margin: 40px 0 0 0;
+}
+
+.navigation-bottons {
+    display: flex;
+    justify-content: center;
+}
+
+.bottom-nav {
+    width: 54px;
+    height: 30px;
+    border-radius: 7px;
+    background-color: #FFFFFF;
+    color: #AACE9B;
+    border:2px solid #AACE9B;
+    font-size: 12px;
+}
+
+.bottom-page {
+    width: 35px;
+    height: 30px;
+    border-radius: 7px;
+    background-color: #FFFFFF;
+    color: #AACE9B;
+    font-size: 12px;
+    border:2px solid #AACE9B;
+    margin:0 10px;
+}
+
+/*.footer-page {
+    display:flex;
+    justify-content: center;
+}*/
+
+.social-networks-footer { 
+    display:flex;
+    justify-content: center;
+}
+
+.social-networks-footer img{
+    margin:0 20px;
+}
+
+.para-footer {
+    display:flex;
+    justify-content: center;
+    text-align: center;
 }
