@@ -69,6 +69,7 @@ main {
 .tertiary-title {
     color: #373867;
     font-size: 30px;
+    /*padding: 100px 0 0 0;*/
 }
 
 .opaque-text {
@@ -82,7 +83,7 @@ main {
     margin: 100px 100px 100px 0;
 }
 
-.wc-button {
+.wc-ct-button {
     width: 154px;
     height: 49px;
     background-color: #AACE9B;
@@ -93,6 +94,13 @@ main {
     border-radius: 7px;
 }
 
+.full-features-content {
+    display: block;
+    width: 1418px;
+    height: 700px;
+    margin: 40px 0 0 0;
+}
+
 .features-activity-content {
     display: flex;
     flex-direction: row;
@@ -100,22 +108,17 @@ main {
     width: 1418px;
     height: 500px;
     margin: 0 0 100px 0;
-    /*padding: 0 10px 0 0;*/
-    /*align-content: flex-start;
-    float: left;*/
 }
 
 .ft-at-image {
     height: 250px;
     width: 150px;
     padding: 50px 0 0 0;
-    /*flex: auto;*/
 }
 
 .ft-at-text {
     height: 250px;
     width: 559px;
-    /*flex: auto;*/
 }
 
 .ft-at-para {
@@ -138,32 +141,36 @@ main {
     font-size: 40px;
 }
 
+.full-contact-content {
+    display: block;
+    margin: 80px 0 0 0;
+}
+
 .contact-content {
     width: 1418px;
     height: 500px;
     display: block;
-    /*float: right;*/
 }
 
 .in-data {
     width: 456px;
     height: 37px;
     border-radius: 7px;
-    border-color: #373867;
+    border:2px solid #373867;
 }
 
 .in-select {
     width: 716px;
     height: 37px;
     border-radius: 7px;
-    border-color: #373867;
+    border:2px solid #373867;
 }
 
 .in-txtarea {
     width: 1408px;
     height: 216px;
     border-radius: 7px;
-    border-color: #373867;
+    border:2px solid #373867;
 }
 
 .lb-data {
@@ -177,4 +184,85 @@ main {
 .in-fields {
     float: left;
     margin: 0 8px 40px 0;
+}
+
+.ct-buttons input{
+    margin: 0 100px 0 0;
+}
+
+.border-top {
+    border-top: 2px solid #DDE1E3;
+    padding: 40px 0 0 0;
+}
+
+.border-left {
+    border-left: 3px solid #373867;
+    padding: 0 0 0 20px;
+    font-size: 15px;
+}
+
+.border-bottom {
+    border-bottom: 2px solid #DDE1E3;
+    padding: 0 0 0 20px;
+}
+
+hr {
+    width: 200px;
+    height: 3px;
+    margin: 0;
+    float: left;
+    background-color: #AACE9B;;
+}
+
+
+.full-history-content {
+    display: block;
+    width: 1418px;
+    height: 900px;
+    margin: 100px 0 0 0;
+}
+
+.history-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 1418px;
+    height: 700px;
+    margin: 0 0 0 0;
+}
+
+.hy-image {
+    height: 300px;
+    width: 709px;
+    padding: 25px 0 25px 0;
+}
+
+.hy-text {
+    height: 300px;
+    width: 709px;
+}
+
+.hy-para {
+    margin: 90px 60px 0 0;
+    font-size: 15px;
+}
+
+.hy-image img {
+    width: 670px;
+    height: 300px;
+    padding: 0 0 0 10px;
+}
+
+.hy-content-title {
+    width: 709px;
+    float:left;
+    color: #373867;
+    font-size: 20px;
+}
+
+.full-activity-content {
+    display: block;
+    width: 1418px;
+    height: 700px;
+    margin: 40px 0 0 0;
 }
