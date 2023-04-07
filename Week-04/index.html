@@ -12,61 +12,65 @@
     <title>Mega Rocket</title>
 </head>
 <body>
-    <main>
-        <header>
-            <button>
-                <img src="assets/imgs/header-menu.svg" alt="Menu icon">
-            </button>
-            <h2>Mega Rocket</h2>
-            <div>
-                <a href="https://www.linkedin.com/"><img src="assets/imgs/linkedin.svg" alt="Linkedin icon"></a>
-                <a href="https://twitter.com/"><img src="assets/imgs/twitter.svg" alt="Twitter icon"></a>
-                <a href="https://www.facebook.com/"><img src="assets/imgs/facebook.svg" alt="Facebook icon"></a>
-                <a href="https://www.instagram.com/"><img src="assets/imgs/instagram.svg" alt="Instagram icon"></a>
-                <a href="https://github.com/"><img src="assets/imgs/git.svg" alt="Github icon"></a>
-            </div>
-            <div>
-                <input type="search" placeholder="Search">
-                <h3>Menu</h3>
-                <nav>
-                    <ul>
-                        <li><a href="">HOME</a></li>
-                        <li><a href="">SIGN UP</a></li>
-                        <li><a href="">LOG IN</a></li>
-                        <li><a href="">CONTACT INFORMATION</a></li>
-                    </ul>
-                </nav>
-                <h3>Contact us</h3>
-                <p>
-                    Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. 
-                    Sed nulla amet lorem feugiat tempus aliquam.
-                </p>
+    <header class="header-content">
+        <button>
+            <img src="assets/imgs/header-menu.svg" alt="Menu icon">
+        </button>
+        <h2>Mega Rocket</h2>
+        <div>
+            <a href="https://www.linkedin.com/"><img src="assets/imgs/linkedin.svg" alt="Linkedin icon"></a>
+            <a href="https://twitter.com/"><img src="assets/imgs/twitter.svg" alt="Twitter icon"></a>
+            <a href="https://www.facebook.com/"><img src="assets/imgs/facebook.svg" alt="Facebook icon"></a>
+            <a href="https://www.instagram.com/"><img src="assets/imgs/instagram.svg" alt="Instagram icon"></a>
+            <a href="https://github.com/"><img src="assets/imgs/git.svg" alt="Github icon"></a>
+        </div>
+        <div>
+            <input type="search" placeholder="Search">
+            <h3>Menu</h3>
+            <nav>
                 <ul>
-                    <li><img src="assets/imgs/mail.svg" alt="Email icon">info.megarocket@megarocket.com</li>
-                    <li><img src="assets/imgs/telephone.svg" alt="Telephone icon">54-341-xxxxxxxxx</li>
-                    <li><img src="assets/imgs/address.svg" alt="Address icon">AAA xxx, Rosario, Argentina, CP 2000</li>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">SIGN UP</a></li>
+                    <li><a href="">LOG IN</a></li>
+                    <li><a href="">CONTACT INFORMATION</a></li>
                 </ul>
-            </div>
-        </header>
+            </nav>
+            <h3>Contact us</h3>
+            <p>
+                Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. 
+                Sed nulla amet lorem feugiat tempus aliquam.
+            </p>
+            <ul>
+                <li><img src="assets/imgs/mail.svg" alt="Email icon">info.megarocket@megarocket.com</li>
+                <li><img src="assets/imgs/telephone.svg" alt="Telephone icon">54-341-xxxxxxxxx</li>
+                <li><img src="assets/imgs/address.svg" alt="Address icon">AAA xxx, Rosario, Argentina, CP 2000</li>
+            </ul>
+        </div>
+    </header>
+    <main>
         <section class="wellcome">
-            <div>
-                <h1>Welcome to MEGA ROCKET</h1>
-                <h3>Winner of Lorem Ipsum of the year</h3>
-                <p>
-                    No solo ganamos el premio, sino que somo el premio: Lorem ipsum dolor sit amet, consectetur adipiscing 
-                    elit. Suspendisse feugiat ante odio, id semper erat varius ut. Fusce ultricies tempor vehicula. In 
-                    lobortis varius arcu et dignissim. Donec egestas ligula lacus, nec eleifend odio tempor vel. Vestibulum 
-                    ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Phasellus dignissim imperdiet
+            <div class="wellcome-info">
+                <h1 class="wellcome-title">Welcome to MEGA ROCKET</h1>
+                <h3 class="wellcome-caption">Winner of Lorem Ipsum of the year</h3>
+            </div>
+            <div class="wellcome-img-section">
+                <img class="wellcome-img" src="assets/imgs/people-working-out.png" alt="People working out">
+            </div>
+            <div class="wellcome-paragraph">
+                <p class="wellcome-paragraph-text">
+                No solo ganamos el premio, sino que somo el premio: Lorem ipsum dolor 
+                sit amet, consectetur adipiscing elit. Suspendisse feugiat ante odio, 
+                id semper erat varius ut. Fusce ultricies tempor vehicula. In lobortis 
+                varius arcu et dignissim. Donec egestas ligula lacus, nec eleifend 
+                odio tempor vel. Vestibulum ante ipsum primis in faucibus orci luctus 
+                et ultrices posuere cubilia curae; Phasellus dignissim imperdiet.
                 </p>
-                <button>Learn more</button>
+                <button class="wellcome-button">Learn more</button>
             </div>
-            <div>
-                <img src="assets/imgs/people-working-out.png" alt="People working out">
-            </div>
-        </section>    
+        </section>
             
             
-            <article>
+            <article class="article-hide">
                 <h3>App Features</h3>
                 <section>
                     <img src="assets/imgs/appointment.svg" alt="Appointment icon"><h4>Appointment booking</h4>
@@ -95,7 +99,7 @@
                     </p>
                 </section>
             </article>
-            <article>
+            <article class="article-hide">
                 <h3>Contact</h3>
                 <section>
                     <form>
@@ -117,7 +121,7 @@
                 </section>
             </article>
             <hr>
-            <article>
+            <article class="article-hide">
                 <h3>History</h3>
                 <p>
                     Lorem impsun Lorem impsunLorem impsunLorem impsunLorem impsunLorem impsunLorem impsunLorem impsunLorem 
@@ -150,7 +154,7 @@
                 </section>
             </article>
             <hr>
-            <article>
+            <article class="article-hide">
                 <section>
                     <img src="assets/imgs/activities.svg" alt="Activities icon"><h4>Activities</h4>
                     <ol>
@@ -192,23 +196,21 @@
                 </nav>
                 <button>NEXT</button>
             </div>
-            <hr>
-        </main>
-        <footer>
-            <div>
-                <a href="https://www.linkedin.com/"><img src="assets/imgs/linkedin.svg" alt="Linkedin icon"></a>
-                <a href="https://twitter.com/"><img src="assets/imgs/twitter.svg" alt="Twitter icon"></a>
-                <a href="https://www.facebook.com/"><img src="assets/imgs/facebook.svg" alt="Facebook icon"></a>
-                <a href="https://www.instagram.com/"><img src="assets/imgs/instagram.svg" alt="Instagram icon"></a>
-                <a href="https://github.com/"><img src="assets/imgs/git.svg" alt="Github icon"></a>
-            </div>
-            <p>
-                Rosario, Argentina.
-            </p>
-            <p>
-                Copyright © 2022 Radium Rocket. All rights reserved.
-            </p>
-        </footer>
     </main>
+    <footer>
+        <div>
+            <a href="https://www.linkedin.com/"><img src="assets/imgs/linkedin.svg" alt="Linkedin icon"></a>
+            <a href="https://twitter.com/"><img src="assets/imgs/twitter.svg" alt="Twitter icon"></a>
+            <a href="https://www.facebook.com/"><img src="assets/imgs/facebook.svg" alt="Facebook icon"></a>
+            <a href="https://www.instagram.com/"><img src="assets/imgs/instagram.svg" alt="Instagram icon"></a>
+            <a href="https://github.com/"><img src="assets/imgs/git.svg" alt="Github icon"></a>
+        </div>
+        <p>
+            Rosario, Argentina.
+        </p>
+        <p>
+            Copyright © 2022 Radium Rocket. All rights reserved.
+        </p>
+    </footer>
 </body>
 </html>

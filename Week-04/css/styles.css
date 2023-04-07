@@ -9,5 +9,61 @@
 
 body {
     font-family: Roboto;
+    font-size: 16px;
     background-color: var(--primary-color-white);
+}
+
+main {
+    margin: 0 3% 0 3%;
+    text-align: center;
+}
+
+.wellcome {
+    background-color: var(--background-color-light);
+}
+
+.wellcome-info {
+    text-align: left;
+}
+
+.wellcome-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--text-color-dark);
+}
+
+.wellcome-caption {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--text-color-light);
+}
+
+.wellcome-img {
+    width: 100%;
+    max-width: 680px;
+}
+
+.wellcome-paragraph-text {
+    font-size: 1rem;
+    text-align: left;
+    color: var(--text-color-light);
+}
+
+.wellcome-button {
+    background-color: var(--primary-color-green);
+    border-style: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--text-color-dark);
+    border-radius: 7px;
+}
+
+
+
+.header-content {
+    display: none;
+}
+
+.article-hide {
+    display: none;
 }
