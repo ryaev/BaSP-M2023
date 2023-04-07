@@ -1,0 +1,13 @@
+:root {
+    --primary-color-white: #FFFFFF;
+    --primary-color-green: #AACE9B;
+    --background-color-light: rgba(170, 206, 155, 0.1);
+    --text-color-light: rgba(55, 56, 103, 0.4);
+    --text-color-dark: #373867;
+    --line-color-light: rgba(55, 56, 103, 0.1);
+}
+
+body {
+    font-family: Roboto;
+    background-color: var(--primary-color-white);
+}
