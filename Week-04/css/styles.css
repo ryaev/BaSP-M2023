@@ -26,7 +26,7 @@ main {
     text-align: left;
 }
 
-.wellcome-title {
+.primary-title {
     font-size: 2.5rem;
     font-weight: bold;
     color: var(--text-color-dark);
@@ -49,16 +49,101 @@ main {
     color: var(--text-color-light);
 }
 
-.wellcome-button {
-    background-color: var(--primary-color-green);
-    border-style: none;
+.main-button {
     font-size: 1rem;
     font-weight: bold;
     color: var(--text-color-dark);
+    background-color: var(--primary-color-green);
+    border-style: none;
     border-radius: 7px;
+    cursor: pointer;
+}
+
+.features {
+    background-color: var(--primary-color-white);
+}
+
+.secondary-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--text-color-dark);
+    text-align: left;
+}
+
+.flexbox-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.flexbox-img {
+    text-align: left;
+    width: 100%;
+}
+
+.flexbox-icon {
+    width: 70%;
+    max-width: 132px
+}
+
+.flexbox-description {
+    text-align: left;
+    width: 100%;
+}
+
+.flexbox-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--text-color-dark);
+}
+
+.flexbox-paragraph {
+    font-size: 1rem;
+    text-align: left;
+    color: var(--text-color-dark);
+}
+
+.contact {
+ text-align: left;
+}
+
+.flexcontact-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.input-fields {
+    width: 100%;
+}
+
+.label-data {
+    display: block;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--text-color-dark);
+}
+
+.input-data {
+    border-radius: 7px;
+    border: 2px solid #373867;;
+}
+
+.input-select {
+    border-radius: 7px;
+    border:2px solid #373867;
+}
+
+.input-txtarea {
+    border-radius: 7px;
+    border:2px solid #373867;
 }
 
 
+
+.activities {
+    background-color: var(--primary-color-white);
+}
 
 .header-content {
     display: none;

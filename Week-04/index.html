@@ -50,7 +50,7 @@
     <main>
         <section class="wellcome">
             <div class="wellcome-info">
-                <h1 class="wellcome-title">Welcome to MEGA ROCKET</h1>
+                <h1 class="primary-title">Welcome to MEGA ROCKET</h1>
                 <h3 class="wellcome-caption">Winner of Lorem Ipsum of the year</h3>
             </div>
             <div class="wellcome-img-section">
@@ -58,69 +58,106 @@
             </div>
             <div class="wellcome-paragraph">
                 <p class="wellcome-paragraph-text">
-                No solo ganamos el premio, sino que somo el premio: Lorem ipsum dolor 
-                sit amet, consectetur adipiscing elit. Suspendisse feugiat ante odio, 
-                id semper erat varius ut. Fusce ultricies tempor vehicula. In lobortis 
-                varius arcu et dignissim. Donec egestas ligula lacus, nec eleifend 
-                odio tempor vel. Vestibulum ante ipsum primis in faucibus orci luctus 
-                et ultrices posuere cubilia curae; Phasellus dignissim imperdiet.
+                    No solo ganamos el premio, sino que somo el premio: Lorem ipsum dolor 
+                    sit amet, consectetur adipiscing elit. Suspendisse feugiat ante odio, 
+                    id semper erat varius ut. Fusce ultricies tempor vehicula. In lobortis 
+                    varius arcu et dignissim. Donec egestas ligula lacus, nec eleifend 
+                    odio tempor vel. Vestibulum ante ipsum primis in faucibus orci luctus 
+                    et ultrices posuere cubilia curae; Phasellus dignissim imperdiet.
                 </p>
-                <button class="wellcome-button">Learn more</button>
+                <button class="main-button">Learn more</button>
             </div>
         </section>
-            
-            
-            <article class="article-hide">
-                <h3>App Features</h3>
-                <section>
-                    <img src="assets/imgs/appointment.svg" alt="Appointment icon"><h4>Appointment booking</h4>
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been 
-                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley 
-                        of type and scrambled it to make a type specimen book.
+        <section class="features">
+            <h3 class="secondary-title">App Features</h3>
+            <div class="flexbox-content">
+                <div class="flexbox-img">
+                    <img class="flexbox-icon" src="assets/imgs/appointment.svg" alt="Appointment icon">
+                </div>
+                <div class="flexbox-description">
+                    <h4 class="flexbox-title">Appointment booking</h4>
+                    <p class="flexbox-paragraph">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 
+                        1500s, when an unknown printer took a galley of type and scrambled it to 
+                        make a type specimen book.
                     </p>
-                    <img src="assets/imgs/member.svg" alt="Membership icon"><h4>Membership management</h4>
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been 
-                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley 
-                        of type and scrambled it to make a type specimen book.
+                </div>
+                <div class="flexbox-img">
+                    <img class="flexbox-icon" src="assets/imgs/member.svg" alt="Membership icon">
+                </div>
+                <div class="flexbox-description">
+                    <h4 class="flexbox-title">Membership management</h4>
+                    <p class="flexbox-paragraph">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 
+                        1500s, when an unknown printer took a galley of type and scrambled it to 
+                        make a type specimen book.
                     </p>
-                    <img src="assets/imgs/scheduled.svg" alt="Scheduled icon"><h4>Scheduled and timetables</h4>
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been 
-                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley 
-                        of type and scrambled it to make a type specimen book.
+                </div>
+                <div class="flexbox-img">
+                    <img class="flexbox-icon" src="assets/imgs/scheduled.svg" alt="Scheduled icon">
+                </div>
+                <div class="flexbox-description">
+                    <h4 class="flexbox-title">Scheduled and timetables</h4>
+                    <p class="flexbox-paragraph">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 
+                        1500s, when an unknown printer took a galley of type and scrambled it to 
+                        make a type specimen book.
                     </p>
-                    <img src="assets/imgs/contact.svg" alt="Contact icon"><h4>Contact and suggestions</h4>
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been 
-                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley 
-                        of type and scrambled it to make a type specimen book.
+                </div>
+                <div class="flexbox-img">
+                    <img class="flexbox-icon" src="assets/imgs/contact.svg" alt="Contact icon">
+                </div>
+                <div class="flexbox-description">
+                    <h4 class="flexbox-title">Contact and suggestions</h4>
+                    <p class="flexbox-paragraph">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 
+                        1500s, when an unknown printer took a galley of type and scrambled it to 
+                        make a type specimen book.
                     </p>
-                </section>
-            </article>
-            <article class="article-hide">
-                <h3>Contact</h3>
-                <section>
-                    <form>
-                        <label>Name: <input type="text" placeholder="Write here"></label>
-                        <label>Last name: <input type="text" placeholder="Write here"></label>
-                        <label>Email: <input type="email" placeholder="Write here"></label>
-                        <label for="contact reason">Contact reason: </label>
-                        <select name="contact reason">
-                            <option selected hidden>Choose</option>
-                            <option>I want to know about membership and cost</option>
-                            <option>I want to make a question or suggestion</option>
-                            <option>I want to make a contact</option>
-                        </select>
-                        <label for="message">Message: </label>
-                        <textarea name="message" placeholder="Write here"></textarea>
-                    </form>
-                    <input type="reset" value="Clear">
-                    <input type="submit" value="Send it">
-                </section>
-            </article>
-            <hr>
+                </div>
+            </div>
+        </section>
+        <section class="contact">
+            <h3 class="secondary-title">Contact</h3>
+                <div class="flexcontact-content">
+                    <div class="input-fields">
+                        <label class="label-data">Name: </label>
+                        <input class="input-data" type="text" placeholder="Write here">
+                    </div>
+                    <div class="input-fields">
+                        <label class="label-data">Last name: </label>
+                        <input class="input-data" type="text" placeholder="Write here">
+                    </div>
+                    <div class="input-fields">
+                        <label class="label-data">Email: </label>
+                        <input class="input-data" type="email" placeholder="Write here">
+                    </div>
+                </div>
+                <div class="input-fields">
+                    <label class="label-data" for="contact reason">Contact reason: </label>
+                    <select class="input-select" name="contact-reason" id="contact-reason">
+                        <option selected hidden>Choose</option>
+                        <option>I want to know about membership and cost</option>
+                        <option>I want to make a question or suggestion</option>
+                        <option>I want to make a contact</option>
+                    </select>
+                </div>
+                    <div class="input-fields">
+                        <label class="label-data" for="message">Message: </label>
+                        <textarea class="input-txtarea" name="message" id="message" placeholder="Write here"></textarea>
+                    </div>
+                </div>
+                <div class="ct-buttons">
+                    <input class="main-button" type="reset" value="Clear">
+                    <input class="main-button" type="submit" value="Send it">
+                </div>
+                </div>
+        </section>
+        
             <article class="article-hide">
                 <h3>History</h3>
                 <p>
@@ -153,37 +190,57 @@
                     </p>
                 </section>
             </article>
-            <hr>
-            <article class="article-hide">
-                <section>
-                    <img src="assets/imgs/activities.svg" alt="Activities icon"><h4>Activities</h4>
-                    <ol>
+        
+        <section class="activities">
+            <div class="flexbox-content">
+                <div class="flexbox-img">
+                    <img class="flexbox-icon" src="assets/imgs/activities.svg" alt="Activities icon">
+                </div>
+                <div class="flexbox-description">
+                    <h4 class="flexbox-title">Activities</h4>
+                    <ol class="flexbox-paragraph">
                         <li>Crossfit</li>
                         <li>Spinning</li>
                         <li>Functional</li>
                         <li>Boxing</li>
                         <li>Fitness</li>
                     </ol>
-                    <img src="assets/imgs/black.svg" alt="Black membership icon"><h4>Black Membership</h4>
-                    <ol>
+                </div>
+                <div class="flexbox-img">
+                    <img class="flexbox-icon" src="assets/imgs/black.svg" alt="Black membership icon">
+                </div>
+                <div class="flexbox-description">
+                    <h4 class="flexbox-title">Black Membership</h4>
+                    <ol class="flexbox-paragraph">
                         <li>Free pass to the weight room</li>
                         <li>Free pass to the lessons (previously enrolled)</li>
                         <li>Personalized follow up by the trainer</li>
                         <li>Grid visualization</li>
                     </ol>
-                    <img src="assets/imgs/classic.svg" alt="Classic icon"><h4>Classic Membership</h4>
-                    <ol>
+                </div>
+                <div class="flexbox-img">
+                    <img class="flexbox-icon" src="assets/imgs/classic.svg" alt="Classic icon">
+                </div>
+                <div class="flexbox-description">
+                    <h4 class="flexbox-title">Classic Membership</h4>
+                    <ol class="flexbox-paragraph">
                         <li>Free pass to the weight room</li>
                         <li>Personalized follow up by the trainer</li>
                         <li>Grid visualization</li>
                     </ol>
-                    <img src="assets/imgs/only-classes.svg" alt="Classes icon"><h4>Only Classes Membership</h4>
-                    <ol>
+                </div>
+                <div class="flexbox-img">
+                    <img class="flexbox-icon" src="assets/imgs/only-classes.svg" alt="Classes icon">
+                </div>
+                <div class="flexbox-description">
+                    <h4 class="flexbox-title">Only Classes Membership</h4>
+                    <ol class="flexbox-paragraph">
                         <li>Free pass to the weight room</li>
                         <li>Grid visualization</li>
                     </ol>
-                </section>
-            </article>
+                </div>
+            </div>
+        </section>
             <div>
                 <button>PREV</button>
                 <nav>
