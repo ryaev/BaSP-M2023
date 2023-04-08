@@ -12,29 +12,27 @@
     <title>Mega Rocket</title>
 </head>
 <body>
-    <header class="header-content">
-        <button>
+    <header>
+        <button class="button-menu">
             <img src="assets/imgs/header-menu.svg" alt="Menu icon">
         </button>
-        <h2>Mega Rocket</h2>
-        <div>
+        <h2 class="header-title">Mega Rocket</h2> 
+        <div class="social-networks">
             <a href="https://www.linkedin.com/"><img src="assets/imgs/linkedin.svg" alt="Linkedin icon"></a>
             <a href="https://twitter.com/"><img src="assets/imgs/twitter.svg" alt="Twitter icon"></a>
             <a href="https://www.facebook.com/"><img src="assets/imgs/facebook.svg" alt="Facebook icon"></a>
             <a href="https://www.instagram.com/"><img src="assets/imgs/instagram.svg" alt="Instagram icon"></a>
             <a href="https://github.com/"><img src="assets/imgs/git.svg" alt="Github icon"></a>
         </div>
-        <div>
+        <nav class="menu">
             <input type="search" placeholder="Search">
             <h3>Menu</h3>
-            <nav>
-                <ul>
-                    <li><a href="">HOME</a></li>
-                    <li><a href="">SIGN UP</a></li>
-                    <li><a href="">LOG IN</a></li>
-                    <li><a href="">CONTACT INFORMATION</a></li>
-                </ul>
-            </nav>
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">SIGN UP</a></li>
+                <li><a href="">LOG IN</a></li>
+                <li><a href="">CONTACT INFORMATION</a></li>
+            </ul>
             <h3>Contact us</h3>
             <p>
                 Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. 
@@ -45,7 +43,7 @@
                 <li><img src="assets/imgs/telephone.svg" alt="Telephone icon">54-341-xxxxxxxxx</li>
                 <li><img src="assets/imgs/address.svg" alt="Address icon">AAA xxx, Rosario, Argentina, CP 2000</li>
             </ul>
-        </div>
+        </nav>
     </header>
     <main>
         <section class="wellcome">
@@ -57,7 +55,7 @@
                 <img class="wellcome-img" src="assets/imgs/people-working-out.png" alt="People working out">
             </div>
             <div class="wellcome-paragraph">
-                <p class="wellcome-paragraph-text">
+                <p class="light-paragraph-text">
                     No solo ganamos el premio, sino que somo el premio: Lorem ipsum dolor 
                     sit amet, consectetur adipiscing elit. Suspendisse feugiat ante odio, 
                     id semper erat varius ut. Fusce ultricies tempor vehicula. In lobortis 
@@ -151,46 +149,59 @@
                         <textarea class="input-txtarea" name="message" id="message" placeholder="Write here"></textarea>
                     </div>
                 </div>
-                <div class="ct-buttons">
+                <div class="contact-buttons">
                     <input class="main-button" type="reset" value="Clear">
                     <input class="main-button" type="submit" value="Send it">
                 </div>
-                </div>
         </section>
-        
-            <article class="article-hide">
-                <h3>History</h3>
-                <p>
-                    Lorem impsun Lorem impsunLorem impsunLorem impsunLorem impsunLorem impsunLorem impsunLorem impsunLorem 
-                    impsunLorem impsunLorem impsunLorem impsunLorem impsunLorem impsunLorem impsunLorem impsunLorem impsunLorem 
-                    impsunLorem impsunLorem impsunLorem impsunLorem impsunLorem impsunLorem impsun.
+        <section class="history">
+            <div class="history-description">
+                <h3 class="secondary-title">History</h3>
+                <p class="light-paragraph-text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis ab at 
+                    dolorem vero recusandae quas quisquam iusto autem nisi quaerat veritatis, 
+                    cumque facilis molestias et odio earum accusamus sed. Voluptatibus. Lorem 
+                    ipsum dolor sit amet consectetur adipisicing elit. Velit inventore quos 
+                    beatae quibusdam veritatis consequatur maxime sapiente ullam quae error 
+                    ducimus dolorum vel, tempora commodi dolor sit amet consectetur. Harum 
+                    consequatur et veritatis quae suscipit amet illo.
                 </p>
-                <section>
-                    <h4>Origin</h4>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat ante odio, id semper erat 
-                        varius ut. Fusce ultricies tempor vehicula. In lobortis varius arcu et dignissim. Donec egestas ligula 
-                        lacus, nec eleifend odio tempor vel. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices 
-                        posuere cubilia curae; Phasellus dignissim imperdietultricies tempor vehicula. In lobortis varius arcu 
-                        et dignissim. Donec egestas ligula lacus, nec eleifend odio tempor vel. Vestibulum ante ipsum primis in 
-                        faucibus orci luctus et ultrices posuere cubilia curae; Phasellus dignissim imperdiet.
+            </div>
+            <div class="flexhistory-content">
+                <div class="flexhistory-description">
+                    <h4 class="tertiary-title">Origin</h4>
+                    <p class="light-paragraph-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat 
+                        ante odio, id semper erat varius ut. Fusce ultricies tempor vehicula. In 
+                        lobortis varius arcu et dignissim. Donec egestas ligula lacus, nec eleifend 
+                        odio tempor vel. Vestibulum ante ipsum primis in faucibus orci luctus et 
+                        ultrices posuere cubilia curae; Phasellus dignissim imperdietultricies tempor 
+                        vehicula. In lobortis varius arcu et dignissim. Donec egestas ligula lacus, 
+                        nec eleifend odio tempor vel. Vestibulum ante ipsum primis in faucibus orci 
+                        luctus et ultrices posuere cubilia curae; Phasellus dignissim imperdiet.
                     </p>
-                    <img src="assets/imgs/russian-weights.png" alt="Russian weights">
-                </section>
-                <section>
-                    <h4>Mission</h4>
+                </div>
+                <div class="flexhistory-img">
                     <img src="assets/imgs/chest-bench.png" alt="Chest bench">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat ante odio, id semper erat 
-                        varius ut. Fusce ultricies tempor vehicula. In lobortis varius arcu et dignissim. Donec egestas ligula 
-                        lacus, nec eleifend odio tempor vel. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices 
-                        posuere cubilia curae; Phasellus dignissim imperdietultricies tempor vehicula. In lobortis varius arcu 
-                        et dignissim. Donec egestas ligula lacus, nec eleifend odio tempor vel. Vestibulum ante ipsum primis in 
-                        faucibus orci luctus et ultrices posuere cubilia curae; Phasellus dignissim imperdiet.
+                </div>
+                <div class="flexhistory-img">
+                    <img src="assets/imgs/russian-weights.png" alt="Russian weights">
+                </div>
+                <div class="flexhistory-description">
+                    <h4 class="tertiary-title">Mission</h4>
+                    <p class="light-paragraph-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat 
+                        ante odio, id semper erat varius ut. Fusce ultricies tempor vehicula. In 
+                        lobortis varius arcu et dignissim. Donec egestas ligula lacus, nec eleifend 
+                        odio tempor vel. Vestibulum ante ipsum primis in faucibus orci luctus et 
+                        ultrices posuere cubilia curae; Phasellus dignissim imperdietultricies tempor
+                        vehicula. In lobortis varius arcu et dignissim. Donec egestas ligula lacus, 
+                        nec eleifend odio tempor vel. Vestibulum ante ipsum primis in faucibus orci 
+                        luctus et ultrices posuere cubilia curae; Phasellus dignissim imperdiet.
                     </p>
-                </section>
-            </article>
-        
+                </div>
+            </div>
+        </section>        
         <section class="activities">
             <div class="flexbox-content">
                 <div class="flexbox-img">
