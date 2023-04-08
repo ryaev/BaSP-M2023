@@ -27,7 +27,8 @@ footer {
 }
 
 .button-menu {
-    display: inline;
+    display: inline-block;
+    
     width: 10%;
     height: 10%;
     background-color: var(--primary-color-white);
@@ -35,7 +36,7 @@ footer {
 }
 
 .header-title {
-    display: inline;
+    display: inline-block;
     font-size: 1.5rem;
     font-weight: bold;
     color: var(--text-color-light);
@@ -43,6 +44,7 @@ footer {
 
 .header-social-networks {
     display: inline;
+    float: right;
 }
 
 .header-social-networks img{
@@ -84,6 +86,7 @@ footer {
 }
 
 .main-button {
+    display: block;
     font-size: 1rem;
     font-weight: bold;
     color: var(--text-color-dark);
@@ -103,6 +106,12 @@ footer {
     font-weight: bold;
     color: var(--text-color-dark);
     text-align: left;
+}
+
+.features-title-line {
+    background-color: var(--primary-color-green);
+    width: 180px;
+    height: 4px;
 }
 
 .flexbox-content {
@@ -162,17 +171,17 @@ footer {
 
 .input-data {
     border-radius: 7px;
-    border: 2px solid #373867;
+    border: 2px solid var(--text-color-dark);
 }
 
 .input-select {
     border-radius: 7px;
-    border: 2px solid #373867;
+    border: 2px solid var(--text-color-dark);
 }
 
 .input-txtarea {
     border-radius: 7px;
-    border: 2px solid #373867;
+    border: 2px solid var(--text-color-dark);
 }
 
 .history {
@@ -219,7 +228,7 @@ footer {
     border-radius: 7px;
     background-color: var(--primary-color-white);
     color: var(--primary-color-green);
-    border:2px solid #AACE9B;
+    border:2px solid var(--primary-color-green);
     font-size: 12px;
 }
 
@@ -230,7 +239,7 @@ footer {
     background-color: var(--primary-color-white);
     color: var(--primary-color-green);
     font-size: 12px;
-    border:2px solid #AACE9B;
+    border:2px solid var(--primary-color-green);
     margin:0 5px;
 }
 
@@ -246,7 +255,11 @@ footer {
 }
 
 .green-bottom-border {
-    border-bottom: 10px solid #AACE9B;s
+    border-bottom: 6px solid var(--primary-color-green);
+}
+
+.light-top-border {
+    border-top: 2px solid var(--line-color-light);
 }
 
 .menu {
