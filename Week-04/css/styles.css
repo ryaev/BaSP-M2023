@@ -5,6 +5,7 @@
     --text-color-light: rgba(55, 56, 103, 0.4);
     --text-color-dark: #373867;
     --line-color-light: rgba(55, 56, 103, 0.1);
+    --image-background-opaque: url(/assets/imgs/people-working-out-opaque.png);
 }
 
 body {
@@ -87,21 +88,20 @@ footer {
     padding: 8% 0;
 }
 
+.wellcome-light-paragraph-text {
+    font-size: 1rem;
+    text-align: left;
+    color: var(--text-color-light);
+}
+
 .light-paragraph-text {
     font-size: 1rem;
     text-align: left;
     color: var(--text-color-light);
 }
 
-.main-button {
+.wellcome-button {
     display: none;
-    font-size: 1rem;
-    font-weight: bold;
-    color: var(--text-color-dark);
-    background-color: var(--primary-color-green);
-    border-style: none;
-    border-radius: 7px;
-    cursor: pointer;
 }
 
 .features {
@@ -412,53 +412,70 @@ footer {
 
 
     .wellcome {
-        display: block;
-        padding: 2% 0;
+        padding: 4% 0;
         background-color: var(--background-color-light);
     }
 
     .flexwellcome-content {
         display: flex;
         flex-direction: row;
-        /*flex-wrap: wrap;*/
-        padding-top: 2%;
+        height: 500px;
     }
     
     .wellcome-menu {
         display: inline;
-        float: left;
+        text-align: left;
+        width: 30%;
+    }
+
+    .wellcome-options {
+        margin: 0 5%;
     }
     
     .wellcome-info {
+        width: 70%;
         text-align: left;
+        background-image: var(--image-background-opaque);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .wellcome-description {
+        margin: 5% 30% 5% 5%;
     }
     
     .primary-title {
-        padding-bottom: 8%;
+        padding: 0;
         font-size: 40px;
         font-weight: bold;
-        color: var(--text-color-dark);
+        color: var(--primary-color-white);
     }
     
     .wellcome-caption {
-        font-size: 1.2rem;
+        padding-top: 5%;
+        font-size: 1.8rem;
         font-weight: bold;
-        color: var(--text-color-light);
+        color: var(--primary-color-white);
     }
-    
-    .wellcome-img {
-        width: 100%;
-        padding: 8% 0;
-    }
-    
-    .light-paragraph-text {
+
+    .wellcome-light-paragraph-text {
+        padding: 7% 20% 7% 0;
         font-size: 1rem;
         text-align: left;
-        color: var(--text-color-light);
+        color: var(--primary-color-white);
+        letter-spacing: 2px;
+        word-spacing: 4px;
+    }
+
+    .wellcome-img {
+        display: none;
     }
     
-    .main-button {
-        display: none;
+    .wellcome-button {
+        display: block;
+        width: 140px;
+        height: 35px;
         font-size: 1rem;
         font-weight: bold;
         color: var(--text-color-dark);
@@ -467,4 +484,12 @@ footer {
         border-radius: 7px;
         cursor: pointer;
     }
+
+    .wellcome-title-line {
+        width: 140px;
+        height: 4px;
+        background-color: var(--primary-color-green);
+    }
+
+
 }
