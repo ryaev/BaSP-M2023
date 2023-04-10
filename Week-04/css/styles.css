@@ -88,7 +88,7 @@ footer {
     padding: 8% 0;
 }
 
-.wellcome-light-paragraph-text {
+.wellcome-light-paragraph {
     font-size: 1rem;
     text-align: left;
     color: var(--text-color-light);
@@ -409,17 +409,39 @@ footer {
 
 @media screen and (min-width: 1025px){
     
+    header {
+        margin-top: 1%;
+        padding-bottom: 1%;
+    }
 
+    .button-menu {
+        display: none;
+    }
+
+    .header-title {
+        padding-left: 0;
+    }
+
+    .header-social-networks {
+        padding-top: 0;
+    }
+    
+    .header-social-networks img {
+        width: 25px;
+        height: 25px;
+        margin: 0 10px;
+    }
 
     .wellcome {
-        padding: 4% 0;
+        margin-top: 2%;
+        padding: 2% 0;
         background-color: var(--background-color-light);
     }
 
     .flexwellcome-content {
         display: flex;
         flex-direction: row;
-        height: 500px;
+        height: 600px;
     }
     
     .wellcome-menu {
@@ -429,6 +451,40 @@ footer {
     }
 
     .wellcome-options {
+        margin: 0 10%;
+    }
+
+    .wellcome-title-line {
+        width: 150px;
+        height: 4px;
+        background-color: var(--primary-color-green);
+    }
+
+    .menu-item {
+        font-size: 1rem;
+        font-weight: bold;
+        text-decoration: none;
+        color: var(--text-color-dark);
+    }
+
+    .light-bottom-border {
+        margin-top: 5%;
+        padding-bottom: 5%;
+        border-bottom: 2px solid var(--line-color-light);
+    }
+
+    .wellcome-menu-paragraph {
+        padding: 5% 0;
+        font-size: 0.8rem;
+        color: var(--text-color-dark);
+    }
+
+    .contact-item {
+        font-size: 0.8rem;
+        color: var(--text-color-dark);
+    }
+
+    .contact-item img {
         margin: 0 5%;
     }
     
@@ -442,7 +498,7 @@ footer {
     }
 
     .wellcome-description {
-        margin: 5% 30% 5% 5%;
+        margin: 10% 30% 5% 5%;
     }
     
     .primary-title {
@@ -459,8 +515,8 @@ footer {
         color: var(--primary-color-white);
     }
 
-    .wellcome-light-paragraph-text {
-        padding: 7% 20% 7% 0;
+    .wellcome-light-paragraph {
+        padding: 10% 20% 10% 0;
         font-size: 1rem;
         text-align: left;
         color: var(--primary-color-white);
@@ -483,12 +539,6 @@ footer {
         border-style: none;
         border-radius: 7px;
         cursor: pointer;
-    }
-
-    .wellcome-title-line {
-        width: 140px;
-        height: 4px;
-        background-color: var(--primary-color-green);
     }
 
 
