@@ -135,7 +135,7 @@ footer {
 
 .flexbox-icon {
     width: 70%;
-    max-width: 132px
+    max-width: 132px;
 }
 
 .flexbox-description {
@@ -145,14 +145,14 @@ footer {
 }
 
 .flexbox-title {
-    font-size: 2.5rem;
+    font-size: 40px;
     font-weight: bold;
     color: var(--text-color-dark);
 }
 
 .flexbox-paragraph {
     padding-top: 8%;
-    font-size: 1rem;
+    font-size: 14px;
     text-align: left;
     color: var(--text-color-dark);
 }
@@ -174,7 +174,7 @@ footer {
 .label-data {
     display: block;
     padding-bottom: 4%;
-    font-size: 1rem;
+    font-size: 14px;
     font-weight: bold;
     color: var(--text-color-dark);
 }
@@ -182,30 +182,30 @@ footer {
 .input-data {
     width: 95%;
     padding: 2% 0;
-    font-size: 1rem;
+    font-size: 14px;
     color: var(--text-color-dark);
-    border-radius: 7px;
-    border: 2px solid var(--text-color-dark);
+    border-radius: 5px;
+    border: 1px solid var(--text-color-dark);
 }
 
 .input-select {
     width: 95%;
     padding: 2% 0;
     font: Roboto;
-    font-size: 1rem;
+    font-size: 14px;
     color: var(--text-color-dark);
-    border-radius: 7px;
-    border: 2px solid var(--text-color-dark);
+    border-radius: 5px;
+    border: 1px solid var(--text-color-dark);
 }
 
 .input-txtarea {
     width: 95%;
     padding: 10% 0;
     font: Roboto;
-    font-size: 1rem;
+    font-size: 14px;
     color: var(--text-color-dark);
-    border-radius: 7px;
-    border: 2px solid var(--text-color-dark);
+    border-radius: 5px;
+    border: 1px solid var(--text-color-dark);
 }
 
 .contact-buttons {
@@ -217,12 +217,12 @@ footer {
     width: 140px;
     height: 35px;
     margin: 4% auto;
-    font-size: 1rem;
+    font-size: 14px;
     font-weight: bold;
     color: var(--text-color-dark);
     background-color: var(--primary-color-green);
     border-style: none;
-    border-radius: 7px;
+    border-radius: 5px;
     cursor: pointer;
 }
 
@@ -358,7 +358,7 @@ footer {
     }
     
     .flexbox-icon {
-        width: 100%;
+        width: 90%;
         max-width: 132px
     }
     
@@ -461,7 +461,7 @@ footer {
     }
 
     .menu-item {
-        font-size: 1rem;
+        font-size: 15px;
         font-weight: bold;
         text-decoration: none;
         color: var(--text-color-dark);
@@ -475,12 +475,12 @@ footer {
 
     .wellcome-menu-paragraph {
         padding: 5% 0;
-        font-size: 0.8rem;
+        font-size: 12px;
         color: var(--text-color-dark);
     }
 
     .contact-item {
-        font-size: 0.8rem;
+        font-size: 10px;
         color: var(--text-color-dark);
     }
 
@@ -510,14 +510,14 @@ footer {
     
     .wellcome-caption {
         padding-top: 5%;
-        font-size: 1.8rem;
+        font-size: 30px;
         font-weight: bold;
         color: var(--primary-color-white);
     }
 
     .wellcome-light-paragraph {
-        padding: 10% 20% 10% 0;
-        font-size: 1rem;
+        padding: 10% 10% 10% 0;
+        font-size: 20px;
         text-align: left;
         color: var(--primary-color-white);
         letter-spacing: 2px;
@@ -537,8 +537,15 @@ footer {
         color: var(--text-color-dark);
         background-color: var(--primary-color-green);
         border-style: none;
-        border-radius: 7px;
+        border-radius: 5px;
         cursor: pointer;
+    }
+
+    .menu-secondary-title {
+        padding: 8% 0 2% 0;
+        font-size: 30px;
+        font-weight: bold;
+        color: var(--text-color-dark);
     }
 
     .secondary-title {
@@ -548,9 +555,67 @@ footer {
 
     .flexbox-content {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
         padding-top: 4%;
     }
+
+    .flexbox-img {
+        margin: auto 0;
+        width: 10%;
+    }
+    
+    .flexbox-icon {
+        width: 80%;
+        max-width: 132px;
+    }
+    
+    .flexbox-description {
+        width: 40%;
+        padding: 4% 0;
+        text-align: left;
+    }
+    
+    .flexbox-paragraph {
+        padding: 5% 5% 0 0;
+    }
+
+    .contact {
+        display: block;
+        text-align: left;
+    }
+    
+    .flexcontact-content {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .input-fields {
+        width: 33%;
+        padding: 2% 0 2% 0;
+    }
+    
+    .input-data {
+        padding: 2% 0;
+    }
+    
+    .input-select {
+        width: 150%;
+        padding: 2% 0;
+    }
+    
+    .input-txtarea {
+        width: 295%;
+        padding: 4% 0 30% 2%;
+    }
+    
+    .contact-button {
+        display: inline;
+        margin: 2% 4% 2% 0;
+    }
+    
+
+
 
     .light-top-border {
         margin-top: 4%;
