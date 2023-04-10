@@ -433,7 +433,7 @@ footer {
     }
 
     .wellcome {
-        margin-top: 2%;
+        margin-top: 1%;
         padding: 2% 0;
         background-color: var(--background-color-light);
     }
@@ -541,5 +541,19 @@ footer {
         cursor: pointer;
     }
 
+    .secondary-title {
+        margin: 0;
+        padding: 4% 0 2% 0;
+    }
+
+    .flexbox-content {
+        display: flex;
+        flex-direction: column;
+        padding-top: 4%;
+    }
+
+    .light-top-border {
+        margin-top: 4%;
+    }
 
 }
