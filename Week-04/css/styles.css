@@ -95,7 +95,7 @@ footer {
 }
 
 .light-paragraph-text {
-    font-size: 1rem;
+    font-size: 14px;
     text-align: left;
     color: var(--text-color-light);
 }
@@ -389,14 +389,13 @@ footer {
     }
 
     .flexhistory-img {
-        display: block;
         width: 50%;
         padding-top: 4%;
+        text-align: left;
         margin: auto;
     }
     
     .flexhistory-img img{
-        width: 100%;
         padding: 0;
     }
     
@@ -572,7 +571,6 @@ footer {
     
     .flexbox-description {
         width: 40%;
-        padding: 4% 0;
         text-align: left;
     }
     
@@ -613,10 +611,33 @@ footer {
         display: inline;
         margin: 2% 4% 2% 0;
     }
+
+    .flexhistory-content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 4% 0;
+    }
     
+    .flexhistory-description {
+        margin: 0 5% auto 0;
+        width: 45%;
+    }
 
+    .flexhistory-img {
+        width: 50%;
+        padding-top: 0;
+        margin: auto;
+    }
+    
+    .flexhistory-img img{
+        width: 95%;
+    }
 
-
+    .tertiary-title {
+        padding: 4% 0;
+    }
+    
     .light-top-border {
         margin-top: 4%;
     }
