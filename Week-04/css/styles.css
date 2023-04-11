@@ -265,29 +265,39 @@ footer {
     display: block;
 }
 
+.list-enumerated {
+    padding-left: 4%;
+    list-style-type: decimal;
+}
+
 .navigation-bottons {
     display: block;
     padding: 8% 0;
 }
 
+.navigation-bottons button:nth-child(5),
+.navigation-bottons button:nth-child(6){
+    display: none;
+}
+
 .nav-botton {
     width: 54px;
     height: 30px;
-    border-radius: 7px;
+    border-radius: 5px;
     background-color: var(--primary-color-white);
     color: var(--primary-color-green);
-    border:1px solid var(--primary-color-green);
+    border: 1px solid var(--primary-color-green);
     font-size: 12px;
 }
 
 .nav-botton-page {
     width: 35px;
     height: 30px;
-    border-radius: 7px;
+    border-radius: 5px;
     background-color: var(--primary-color-white);
     color: var(--primary-color-green);
     border: 1px solid var(--primary-color-green);
-    margin:0 5px;
+    margin: 0 5px;
 }
 
 .footer-social-networks {
@@ -310,7 +320,7 @@ footer {
 }
 
 .green-bottom-border {
-    border-bottom: 4px solid var(--primary-color-green);
+    border-bottom: 6px solid var(--primary-color-green);
 }
 
 .light-top-border {
@@ -358,7 +368,7 @@ footer {
     }
     
     .flexbox-icon {
-        width: 90%;
+        width: 80%;
         max-width: 132px
     }
     
@@ -370,6 +380,10 @@ footer {
     
     .flexbox-paragraph {
         padding-top: 4%;
+    }
+
+    .label-data {
+        padding-bottom: 2%;
     }
     
     .contact-button {
@@ -642,4 +656,32 @@ footer {
         margin-top: 4%;
     }
 
+    .navigation-bottons {
+        display: block;
+        padding: 4% 0;
+    }
+
+    .navigation-bottons button:nth-child(5),
+    .navigation-bottons button:nth-child(6) {
+        display: inline;
+    }
+    
+    .nav-botton-page {
+        margin:0 20px;
+    }
+    
+    .footer-social-networks {
+        padding: 2% 0;
+    }
+    
+    .footer-social-networks img {
+        width: 30px;
+        height: 30px;
+        margin: 0 20px;
+    }
+    
+    .footer-paragraph {
+        font-weight: bold;
+        padding-bottom: 2%;
+    }
 }
