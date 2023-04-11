@@ -5,7 +5,7 @@
     --text-color-light: rgba(55, 56, 103, 0.4);
     --text-color-dark: #373867;
     --line-color-light: rgba(55, 56, 103, 0.1);
-    --image-background-opaque: url(/assets/imgs/people-working-out-opaque.png);
+    --image-background-opaque: url('../../assets/imgs/people-working-out-opaque.png');
 }
 
 body {
@@ -333,7 +333,7 @@ footer {
     padding-left: 2%;
 }
 
-/*----------TABLET---------*/
+/*----------Tablet responsive---------*/
 
 @media screen and (min-width: 601px){
     
@@ -418,7 +418,7 @@ footer {
     }
 }
 
-/*----------DESKTOP----------*/
+/*----------Desktop responsive----------*/
 
 @media screen and (min-width: 1025px){
     
