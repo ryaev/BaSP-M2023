@@ -16,5 +16,11 @@ Author: Robert Yanez
 Styles are added to the landing page through the use of CSS, seeking to improve the user experience when entering the page.
 Author: Robert Yanez
 
+## Week 04
+Corresponding styles are added to obtain a web with responsive design, which allows adapting to the different devices from where it is accessed, such as: smartphones, tablets and desktop computers.
+Author: Robert Yanez
+
+Click on the following link to access the site with responsive design [Mega Rocket](https://ryaev.github.io/BaSP-M2023/Week-04/index.html).
+
 # License
 Copyright © 2022 Radium Rocket. All rights reserved.
