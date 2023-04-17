@@ -46,7 +46,7 @@ console.log(stringDResult);
 
 console.log('-Exercise 2.e:');
 
-var stringE= 'Planet earth';
+var stringE= 'Planet Earth';
 var firstSpace= stringE.indexOf(' ');
 console.log(firstSpace);
 
