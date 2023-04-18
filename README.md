@@ -22,5 +22,10 @@ Author: Robert Yanez
 
 Click on the following link to access the site with responsive design [Mega Rocket](https://ryaev.github.io/BaSP-M2023/Week-04/index.html).
 
+## Week 05
+This week was focused on the development of skills to add functionality through the use of Javascript ES5 to the application, focused on learning iteration loops, functions, and control statements.
+
+Click on the following link to access access the Javascript practice [Mega Rocket](https://ryaev.github.io/BaSP-M2023/Week-05/index.html).
+
 # License
 Copyright © 2022 Radium Rocket. All rights reserved.
