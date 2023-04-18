@@ -30,7 +30,7 @@ console.log('-Exercise 5.c:');
 
 var sentence= '';
 for (var country= 0; country < countries.length; country++) {
-    sentence= sentence + (countries[country]) + ", ";
+    sentence= sentence + (countries[country]) + " ";
 }
 alert(sentence);
 
