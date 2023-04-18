@@ -33,11 +33,9 @@ console.log(stringLastThree);
 console.log('-Exercise 2.d:');
 
 var stringD= 'wAsHiNgToN';
-var stringFirstLetter= stringD.substring(0, 1);
-var stringFirstUpper= stringFirstLetter.toUpperCase();
-var stringRestLetters= stringD.substring(1,stringD.length);
-var stringRestLower= stringRestLetters.toLowerCase();
-var stringDResult = (stringFirstUpper + stringRestLower);
+var stringFirstLetter= stringD.substring(0, 1).toUpperCase();
+var stringRestLetters= stringD.substring(1,stringD.length).toLowerCase();
+var stringDResult= (stringFirstLetter + stringRestLetters);
 console.log(stringDResult);
 
 /*  e. Crear una variable de tipo string con al menos 10 caracteres y algún espacio en blanco. 
@@ -59,16 +57,12 @@ console.log('-Exercise 2.f:');
 
 var stringF= 'mOnTeViDeO wAsHiNgToN';
 var firstSpaceString= stringF.indexOf(' ');
-var beginSecondWord = firstSpaceString + 1;
-var firstWordLetter= stringF.substring(0, 1);
-var firstWordUpper= firstWordLetter.toUpperCase();
-var firstWordRest= stringF.substring(1, firstSpaceString);
-var firstWordRestLower= firstWordRest.toLowerCase();
-var firstWordResult = (firstWordUpper + firstWordRestLower);
-var secondWordLetter= stringF.substring(beginSecondWord, (beginSecondWord + 1));
-var secondWordUpper= secondWordLetter.toUpperCase();
-var secondWordRest= stringF.substring((beginSecondWord + 1), stringF.length);
-var secondWordRestLower= secondWordRest.toLowerCase();
-var secondWordResult= (secondWordUpper + secondWordRestLower);
+var beginSecondWord= firstSpaceString + 1;
+var firstWordLetter= stringF.substring(0, 1).toUpperCase();
+var firstWordRest= stringF.substring(1, firstSpaceString).toLowerCase();
+var firstWordResult= (firstWordLetter + firstWordRest);
+var secondWordLetter= stringF.substring(beginSecondWord, (beginSecondWord + 1)).toUpperCase();
+var secondWordRest= stringF.substring((beginSecondWord + 1), stringF.length).toLowerCase();
+var secondWordResult= (secondWordLetter + secondWordRest);
 var stringFResult= (firstWordResult + ' ' + secondWordResult)
 console.log(stringFResult);
