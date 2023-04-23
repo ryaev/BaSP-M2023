@@ -11,14 +11,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <title>Mega Rocket - Sign Up</title>
+    <title>Sign Up - Mega Rocket</title>
 </head>
 <body>
     <header class="green-bottom-border">
         <button class="button-menu">
             <img src="../../assets/imgs/header-menu.svg" alt="Menu icon">
         </button>
-        <h2 id="header-title">Mega Rocket - Sign Up</h2>
+        <h2 id="header-title">Mega Rocket</h2>
         <div class="header-social-networks">
             <a href="https://www.linkedin.com/"><img src="../../assets/imgs/linkedin.svg" alt="Linkedin icon"></a>
             <a href="https://twitter.com/"><img src="../../assets/imgs/twitter.svg" alt="Twitter icon"></a>
@@ -28,7 +28,71 @@
         </div>
     </header>
     <main class="green-bottom-border">
-        <div><h2>Espacio</h2></div>
+        <section class="signup">
+            <h3 class="secondary-title">Mega Rocket</h3>
+            <h4>Sign Up</h4>
+            <div>
+                <div class="sign-fields">
+                    <label class="label-data" for="name-input">Name *</label>
+                    <input id="name-input" class="input-data" type="text" placeholder="Write here">
+                    <span id="fail-name"></span>
+                </div>
+                <div class="sign-fields">
+                    <label class="label-data">Last name *</label>
+                    <input class="input-data" type="text" placeholder="Write here">
+                </div>
+                <div class="sign-fields">
+                    <label class="label-data">DNI *</label>
+                    <input class="input-data" type="text" placeholder="Write here">
+                </div>
+                <div class="sign-fields">
+                    <label class="label-data">Birthdate *</label>
+                    <input class="input-data" type="date">
+                </div>
+                <div class="sign-fields">
+                    <label class="label-data">Phone number *</label>
+                    <input class="input-data" type="text" placeholder="Write here">
+                </div>
+                <div class="sign-fields">
+                    <label class="label-data">Address *</label>
+                    <input class="input-data" type="text" placeholder="Write here">
+                </div>
+                <div class="sign-fields">
+                    <label class="label-data">Location *</label>
+                    <input class="input-data" type="text" placeholder="Write here">
+                </div>
+                <div class="sign-fields">
+                    <label class="label-data">Postal code *</label>
+                    <input class="input-data" type="text" placeholder="Write here">
+                </div>
+                <div class="sign-fields">
+                    <label class="label-data">E-mail *</label>
+                    <input class="input-data" type="text" placeholder="Write here">
+                </div>
+                <div>
+                    <p>Membership *</p>
+                    <input type="radio" id="msBlack" name="membership" value="black">
+                    <label for="msBlack">Black</label>
+                    <input type="radio" id="msClassic" name="membership" value="classic">
+                    <label for="msClassic">Classic</label>
+                    <input type="radio" id="msOnly" name="membership" value="only">
+                    <label for="msOnly">Only Classes</label>
+                </div>
+                <div class="sign-fields">
+                    <label class="label-data">Password *</label>
+                    <input class="input-data" type="password" placeholder="Type a password">
+                </div>
+                <div class="sign-fields">
+                    <label class="label-data">Repeat password *</label>
+                    <input class="input-data" type="password" placeholder="Repeat the password">
+                </div>
+            </div>
+            <p>* Indicates a required field</p>
+            <div class="signup-buttons">
+                <button id="back-button" class="signup-button">Back</button>
+                <button id="sign-button" class="signup-button">Sign Up</button>
+            </div>
+        </section>
     </main>
     <footer>
         <div class="footer-social-networks">
@@ -45,5 +109,6 @@
             Copyright © 2022 Radium Rocket. All rights reserved.
         </p>
     </footer>
+    <script src="../js/sign-up.js"></script>
 </body>
 </html>
