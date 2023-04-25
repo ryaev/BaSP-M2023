@@ -27,5 +27,14 @@ This week was focused on the development of skills to add functionality through 
 
 Click on the following link to access access the Javascript practice [Mega Rocket](https://ryaev.github.io/BaSP-M2023/Week-05/index.html).
 
+## Week 06
+Validations are added to Sign up and Login using Javascript, interacting with the DOM and allowing the user to verify the different errors that may occur when filling out the Sign up and Login forms.
+
+Click on the following link to access access the Landing [Mega Rocket - Landing](https://ryaev.github.io/BaSP-M2023/Week-06/views/index.html).
+
+Click on the following link to access access the Sign Up [Mega Rocket - Sign Up](https://ryaev.github.io/BaSP-M2023/Week-06/views/sign-up.html).
+
+Click on the following link to access access the Login [Mega Rocket - Login](https://ryaev.github.io/BaSP-M2023/Week-06/views/login.html).
+
 # License
 Copyright © 2022 Radium Rocket. All rights reserved.

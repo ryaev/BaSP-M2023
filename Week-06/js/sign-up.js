@@ -177,7 +177,7 @@ birthIpt.onblur= function(){
 
     if (birthIpt.value===''){
         failBirthSpn.innerText= 'You must fill in the birthdate field';
-    } else if (yearBirth<=(dateYearCompa-70) || yearBirth>(dateYearCompa-14)){
+    } else if (yearBirth<=(dateYearCompa-70) || yearBirth>(dateYearCompa-13)){
         failBirthSpn.innerText= 'Your age range is not valid';
     } else{
         failBirthSpn.innerText= '';
