@@ -57,7 +57,7 @@ footer {
 }
 
 .sign-fields {
-    padding-bottom: 4%;
+    padding-bottom: 2%;
 }
 
 .label-data {
@@ -99,10 +99,9 @@ footer {
 }
 
 .signup-button {
-    /*display: block;*/
     width: 140px;
     height: 35px;
-    margin: 4% auto;
+    margin: 4% 2%;
     font-size: 14px;
     font-weight: bold;
     color: var(--text-color-dark);
@@ -112,18 +111,17 @@ footer {
     cursor: pointer;
 }
 
+#label-info {
+    display: block;
+    padding: 2% 4% 2% 4%;
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--text-color-dark);
+    text-align: left;
+}
+
 .green-bottom-border {
     border-bottom: 6px solid var(--primary-color-green);
-}
-
-.light-top-border {
-    margin-top: 8%;
-    border-top: 2px solid var(--line-color-light);
-}
-
-#dark-left-border {
-    border-left: 4px solid var(--text-color-dark);
-    padding-left: 2%;
 }
 
 /*----------Sign up tablet responsive---------*/
@@ -172,7 +170,57 @@ footer {
         margin: 0 10px;
     }
 
+    #secondary-title {
+        margin: 0;
+        padding: 2% 0 1% 0;
+    }
 
+    #tertiary-title {
+        padding: 2% 0 1% 0;
+    }
+
+    .flexsignup-content {
+        display: flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+    }
+
+    .sign-fields {
+        width: 35%;
+        padding: 0;
+        margin:  auto;
+    }
+
+    .label-data {
+        padding: 1% 2% 1% 4%;
+    }
+    
+    .input-data {
+        padding: 2%;
+    }
+
+    .fail-text {
+        padding: 1% 2% 1% 4%;
+    }
+    
+    .label-radio {
+        padding: 1% 6% 1% 2%;
+    }
+
+    #signup-buttons {
+        display: block;
+    }
+    
+    .signup-button {
+        width: 140px;
+        height: 35px;
+        margin: 1% 4% 2% 4%;
+    }
+
+    #label-info {
+        padding: 1%;
+        text-align: center;
+    }
 
     .footer-social-networks {
         padding: 2% 0;

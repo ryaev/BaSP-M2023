@@ -77,15 +77,6 @@
                     <input id="email-input" class="input-data" type="text" placeholder="Write here">
                     <span id="fail-email" class="fail-text"></span>
                 </div>
-                <div id="membership-options" class="sign-fields">
-                    <p class="label-data">Membership *</p>
-                    <input type="radio" id="msBlack" name="membership" value="black">
-                    <label class="label-radio" for="msBlack">Black</label>
-                    <input type="radio" id="msClassic" name="membership" value="classic">
-                    <label class="label-radio" for="msClassic">Classic</label>
-                    <input type="radio" id="msOnly" name="membership" value="only">
-                    <label class="label-radio" for="msOnly">Only Classes</label>
-                </div>
                 <div class="sign-fields">
                     <label class="label-data">Password *</label>
                     <input id="pass1-input" class="input-data" type="password" placeholder="Type a password">
@@ -96,8 +87,17 @@
                     <input id="pass2-input" class="input-data" type="password" placeholder="Repeat the password">
                     <span id="fail-pass2" class="fail-text"></span>
                 </div>
+                <div class="sign-fields">
+                    <p class="label-data">Membership *</p>
+                    <input type="radio" id="msBlack" name="membership" value="black">
+                    <label class="label-radio" for="msBlack">Black</label>
+                    <input type="radio" id="msClassic" name="membership" value="classic">
+                    <label class="label-radio" for="msClassic">Classic</label>
+                    <input type="radio" id="msOnly" name="membership" value="only">
+                    <label class="label-radio" for="msOnly">Only Classes</label>
+                </div>
             </div>
-            <p>* Indicates a required field</p>
+            <p id="label-info">* Indicates a required field</p>
             <div id="signup-buttons">
                 <button id="back-button" class="signup-button">Back</button>
                 <button id="sign-button" class="signup-button">Sign Up</button>
