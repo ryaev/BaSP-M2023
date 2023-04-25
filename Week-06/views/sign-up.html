@@ -28,75 +28,77 @@
         </div>
     </header>
     <main class="green-bottom-border">
-        <section class="signup">
-            <h3 class="secondary-title">Mega Rocket</h3>
-            <h4>Sign Up</h4>
-            <div>
+        <section id="signup">
+            <h1 id="secondary-title">Mega Rocket</h1>
+            <h3 id="tertiary-title">Sign Up</h3>
+            <div class="flexsignup-content">
                 <div class="sign-fields">
                     <label class="label-data" for="name-input">Name *</label>
                     <input id="name-input" class="input-data" type="text" placeholder="Write here">
-                    <span id="fail-name"></span>
+                    <span id="fail-name" class="fail-text"></span>
                 </div>
                 <div class="sign-fields">
                     <label class="label-data">Last name *</label>
                     <input id="lastname-input" class="input-data" type="text" placeholder="Write here">
-                    <span id="fail-lastname"></span>
+                    <span id="fail-lastname" class="fail-text"></span>
                 </div>
                 <div class="sign-fields">
                     <label class="label-data">DNI *</label>
                     <input id="dni-input" class="input-data" type="text" placeholder="Write here">
-                    <span id="fail-dni"></span>
+                    <span id="fail-dni" class="fail-text"></span>
                 </div>
                 <div class="sign-fields">
                     <label class="label-data">Birthdate *</label>
                     <input id="birth-input" class="input-data" type="date">
-                    <span id="fail-birth"></span>
+                    <span id="fail-birth" class="fail-text"></span>
                 </div>
                 <div class="sign-fields">
                     <label class="label-data">Phone number *</label>
                     <input id="phone-input" class="input-data" type="text" placeholder="Write here">
-                    <span id="fail-phone"></span>
+                    <span id="fail-phone" class="fail-text"></span>
                 </div>
                 <div class="sign-fields">
                     <label class="label-data">Address *</label>
                     <input id="address-input" class="input-data" type="text" placeholder="Write here">
-                    <span id="fail-address"></span>
+                    <span id="fail-address" class="fail-text"></span>
                 </div>
                 <div class="sign-fields">
                     <label class="label-data">Location *</label>
                     <input id="location-input" class="input-data" type="text" placeholder="Write here">
-                    <span id="fail-location"></span>
+                    <span id="fail-location" class="fail-text"></span>
                 </div>
                 <div class="sign-fields">
                     <label class="label-data">Postal code *</label>
                     <input id="postal-input" class="input-data" type="text" placeholder="Write here">
-                    <span id="fail-postal"></span>
+                    <span id="fail-postal" class="fail-text"></span>
                 </div>
                 <div class="sign-fields">
                     <label class="label-data">E-mail *</label>
                     <input id="email-input" class="input-data" type="text" placeholder="Write here">
-                    <span id="fail-email"></span>
+                    <span id="fail-email" class="fail-text"></span>
                 </div>
-                <div>
-                    <p>Membership *</p>
+                <div id="membership-options" class="sign-fields">
+                    <p class="label-data">Membership *</p>
                     <input type="radio" id="msBlack" name="membership" value="black">
-                    <label for="msBlack">Black</label>
+                    <label class="label-radio" for="msBlack">Black</label>
                     <input type="radio" id="msClassic" name="membership" value="classic">
-                    <label for="msClassic">Classic</label>
+                    <label class="label-radio" for="msClassic">Classic</label>
                     <input type="radio" id="msOnly" name="membership" value="only">
-                    <label for="msOnly">Only Classes</label>
+                    <label class="label-radio" for="msOnly">Only Classes</label>
                 </div>
                 <div class="sign-fields">
                     <label class="label-data">Password *</label>
-                    <input class="input-data" type="password" placeholder="Type a password">
+                    <input id="pass1-input" class="input-data" type="password" placeholder="Type a password">
+                    <span id="fail-pass1" class="fail-text"></span>
                 </div>
                 <div class="sign-fields">
                     <label class="label-data">Repeat password *</label>
-                    <input class="input-data" type="password" placeholder="Repeat the password">
+                    <input id="pass2-input" class="input-data" type="password" placeholder="Repeat the password">
+                    <span id="fail-pass2" class="fail-text"></span>
                 </div>
             </div>
             <p>* Indicates a required field</p>
-            <div class="signup-buttons">
+            <div id="signup-buttons">
                 <button id="back-button" class="signup-button">Back</button>
                 <button id="sign-button" class="signup-button">Sign Up</button>
             </div>

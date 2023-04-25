@@ -34,16 +34,18 @@
             <div>
                 <div class="login-fields">
                     <label class="label-data">Email: </label>
-                    <input class="input-data" type="text" placeholder="Type your Email">
+                    <input id="email-input" class="input-data" type="text" placeholder="Type your Email">
+                    <span id="fail-email"></span>
                 </div>
                 <div class="login-fields">
                     <label class="label-data">Password: </label>
-                    <input class="input-data" type="password" placeholder="Type your password">
+                    <input id="pass-input" class="input-data" type="password" placeholder="Type your password">
+                    <span id="fail-pass"></span>
                 </div>
             </div>
             <div class="login-buttons">
-                <button class="login-button">Back</button>
-                <button class="login-button">Sign In</button>
+                <button id="back-button" class="login-button">Back</button>
+                <button id="login-button" class="login-button">Sign In</button>
             </div>
             <a href="">Forgot password?</a>
             <a href="../views/sign-up.html">Create a partner account</a>
@@ -64,5 +66,6 @@
             Copyright © 2022 Radium Rocket. All rights reserved.
         </p>
     </footer>
+    <script src="../js/login.js"></script>
 </body>
 </html>
