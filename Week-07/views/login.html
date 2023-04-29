@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/header.css">
+    <link rel="stylesheet" type="text/css" href="../css/footer.css">
+    <link rel="stylesheet" type="text/css" href="../css/login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Login - Mega Rocket</title>
+</head>
+<body>
+    <header class="green-bottom-border">
+        <button class="button-menu">
+            <img src="../../assets/imgs/header-menu.svg" alt="Menu icon">
+        </button>
+        <h2 id="header-title">Mega Rocket</h2>
+        <div class="header-social-networks">
+            <a href="https://www.linkedin.com/"><img src="../../assets/imgs/linkedin.svg" alt="Linkedin icon"></a>
+            <a href="https://twitter.com/"><img src="../../assets/imgs/twitter.svg" alt="Twitter icon"></a>
+            <a href="https://www.facebook.com/"><img src="../../assets/imgs/facebook.svg" alt="Facebook icon"></a>
+            <a href="https://www.instagram.com/"><img src="../../assets/imgs/instagram.svg" alt="Instagram icon"></a>
+            <a href="https://github.com/"><img src="../../assets/imgs/git.svg" alt="Github icon"></a>
+        </div>
+    </header>
+    <main class="green-bottom-border">
+        <section id="login">
+            <h1 id="secondary-title">Mega Rocket</h3>
+            <h3 id="tertiary-title">Login</h4>
+            <div class="flexlogin-content">
+                <div class="login-fields">
+                    <label class="label-data">Email: </label>
+                    <input id="email-input" class="input-data" type="text" placeholder="Type your Email">
+                    <span id="fail-email" class="fail-text"></span>
+                </div>
+                <div class="login-fields">
+                    <label class="label-data">Password: </label>
+                    <input id="pass-input" class="input-data" type="password" placeholder="Type your password">
+                    <span id="fail-pass" class="fail-text"></span>
+                </div>
+            </div>
+            <div class="login-buttons">
+                <button id="back-button" class="login-button">Back</button>
+                <button id="login-button" class="login-button">Sign In</button>
+            </div>
+            <a class="optional-links" href="">Forgot password?</a>
+            <a class="optional-links" href="../views/sign-up.html">Create a partner account</a>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-social-networks">
+            <a href="https://www.linkedin.com/"><img src="../../assets/imgs/linkedin.svg" alt="Linkedin icon"></a>
+            <a href="https://twitter.com/"><img src="../../assets/imgs/twitter.svg" alt="Twitter icon"></a>
+            <a href="https://www.facebook.com/"><img src="../../assets/imgs/facebook.svg" alt="Facebook icon"></a>
+            <a href="https://www.instagram.com/"><img src="../../assets/imgs/instagram.svg" alt="Instagram icon"></a>
+            <a href="https://github.com/"><img src="../../assets/imgs/git.svg" alt="Github icon"></a>
+        </div>
+        <p class="footer-paragraph">
+            Rosario, Argentina.
+        </p>
+        <p class="footer-paragraph">
+            Copyright © 2022 Radium Rocket. All rights reserved.
+        </p>
+    </footer>
+    <script src="../js/login.js"></script>
+</body>
+</html>
