@@ -4,14 +4,43 @@ var urlSignUp = 'https://api-rest-server.vercel.app/signup/';
 var validatedSignUp= false;
 
 function getData(url){
-    return fetch(url)
-    .then((response) => response.json())
-    .then((jsonData=>{
-        return jsonData;
-    }))
-    .catch((error) => {
-        return console.log(error);
-    });
+    fetch(url)
+    .then(function(response){
+        if(response.ok){
+            return response.json();
+        } else{
+            return response.json().then(error => {
+                throw new Error(JSON.stringify(error));
+            });
+        }
+    })
+    .then(function(data){
+        var successInfo= JSON.parse(JSON.stringify(data));
+
+        alert('  '+successInfo.msg+'  '+'\n'+'\n'
+        +'Name: '+successInfo.data.name+'\n'
+        +'Last name: '+successInfo.data.lastName+'\n'
+        +'DNI: '+successInfo.data.dni+'\n'
+        +'BirthDate: '+successInfo.data.dob+'\n'
+        +'Phone number: '+successInfo.data.phone+'\n'
+        +'Address: '+successInfo.data.address+'\n'
+        +'Location: '+successInfo.data.city+'\n'
+        +'Postal code: '+successInfo.data.zip+'\n'
+        +'E-mail: '+successInfo.data.email+'\n'
+        +'Password: '+successInfo.data.password+'\n'
+        )
+    })
+    .catch(function(error){
+        var invalidInfo= JSON.parse(error.message);
+        var invalidErrors = invalidInfo.errors;
+        var alertContent= '';
+
+        for (var counter= 0; counter < invalidErrors.length; counter++){
+            alertContent= alertContent+'- '+(invalidErrors[counter].msg)+'\n';
+        }
+        alert('  Error in user sign up, details:  '+'\n'+'\n'
+        +alertContent);
+    })
 }
 
 var backBtn= document.getElementById('back-button');
@@ -28,9 +57,7 @@ signBtn.onclick= function(){
                 '&city='+locationIpt.value+'&zip='+postalIpt.value+'&email='+emailIpt.value+'&password='+passTwoIpt.value;
 
     if(validatedSignUp===true){
-        getData(urlSignUp).then((jsonData) => {
-        alert(jsonData.msg);
-        });
+        getData(urlSignUp);
     } else if(validatedSignUp===false){
         register= 'Registration error, please verify the uploaded data';
         alert(register);
