@@ -6,8 +6,8 @@ var validatedSignUp= false;
 document.addEventListener("DOMContentLoaded", () => {
     var userInfoLocal= JSON.parse(localStorage.getItem('data'));
 
-    var dayBirthLocal= (userInfoLocal.dob.substring(0, 2));
-    var monthBirthLocal= (userInfoLocal.dob.substring(3, 5));
+    var dayBirthLocal= (userInfoLocal.dob.substring(3, 5));
+    var monthBirthLocal= (userInfoLocal.dob.substring(0, 2));
     var yearBirthLocal= (userInfoLocal.dob.substring(6, 10));
     var newBirthLocal= yearBirthLocal + '-' + monthBirthLocal + '-' + dayBirthLocal;
 
@@ -31,32 +31,14 @@ backBtn.onclick= function(){
 
 var signBtn= document.getElementById('sign-button');
 signBtn.onclick= function(){
+    dateFormatting(birthIpt.value);
     validateRegister();
 
     urlSignUp = 'https://api-rest-server.vercel.app/signup?name='+nameIpt.value+'&lastName='+lastNameIpt.value+
                 '&dni='+dniIpt.value+'&dob='+newBirthFormat+'&phone='+phoneIpt.value+'&address='+addressIpt.value+
                 '&city='+locationIpt.value+'&zip='+postalIpt.value+'&email='+emailIpt.value+'&password='+passTwoIpt.value;
 
-    if(validatedSignUp===true){
-        getData(urlSignUp);
-    } else if(validatedSignUp===false){
-        register= 'Registration error, please verify the uploaded data';
-        alert(register);
-    }
-
-    /*alert('  '+register+'  '+'\n'+'\n'
-        +'Name: '+nameIpt.value+'   '+failNameSpn.innerText+'\n'
-        +'Last name: '+lastNameIpt.value+'   '+failLastNameSpn.innerText+'\n'
-        +'DNI: '+dniIpt.value+'   '+failDniSpn.innerText+'\n'
-        +'BirthDate: '+newBirthFormat+'   '+failBirthSpn.innerText+'\n'
-        +'Phone number: '+phoneIpt.value+'   '+failPhoneSpn.innerText+'\n'
-        +'Address: '+addressIpt.value+'   '+failAddressSpn.innerText+'\n'
-        +'Location: '+locationIpt.value+'   '+failLocationSpn.innerText+'\n'
-        +'Postal code: '+postalIpt.value+'   '+failPostalSpn.innerText+'\n'
-        +'E-mail: '+emailIpt.value+'   '+failEmailSpn.innerText+'\n'
-        +'Password: '+passOneIpt.value+'   '+failPassOneSpn.innerText+'\n'
-        +'Repeat password: '+passTwoIpt.value+'   '+failPassTwoSpn.innerText+'\n'
-    )*/
+    getData(urlSignUp);
 }
 
 function validateRegister(){
@@ -67,11 +49,20 @@ function validateRegister(){
        emailIpt.value!="" && failEmailSpn.innerText==="" && passOneIpt.value!="" && failPassOneSpn.innerText==="" &&
        passTwoIpt.value!="" && failPassTwoSpn.innerText===""){
         validatedSignUp= true;
-        //register= 'Successful registration! Thank you for being part of Mega Rocket';
     } else{
-        register= 'Registration error, please verify the uploaded data';
+        nameIpt.onblur();
+        lastNameIpt.onblur();
+        dniIpt.onblur();
+        birthIpt.onblur();
+        phoneIpt.onblur();
+        addressIpt.onblur();
+        locationIpt.onblur();
+        postalIpt.onblur();
+        emailIpt.onblur();
+        passOneIpt.onblur();
+        passTwoIpt.onblur();
+        validatedSignUp= false;
     }
-    return register;
 }
 
 function getData(url){
@@ -86,6 +77,7 @@ function getData(url){
         }
     })
     .then(function(data){
+        dateFormatting(birthIpt.value);
         var successInfo= JSON.parse(JSON.stringify(data));
 
         alert('  '+successInfo.msg+'  '+'\n'+'\n'
@@ -237,7 +229,7 @@ dniIpt.onblur= function(){
         failDniSpn.innerText= 'You must fill in the DNI field';
     } else if (validatedInputType==='string' || validatedInputNumber===false){
         failDniSpn.innerText= 'Letters or special characters are not allowed in DNI';
-    } else if (dniIpt.value.length<=7 || dniIpt.value.length>10){
+    } else if (dniIpt.value.length<7 || dniIpt.value.length>8){
         failDniSpn.innerText= 'Invalid number of characters for DNI';
     } else{
         failDniSpn.innerText= '';
@@ -257,19 +249,24 @@ var newBirthFormat= '';
 var dateCompa= new Date();
 var dateYearCompa= dateCompa.getFullYear();
 
-birthIpt.onblur= function(){
+function dateFormatting(){
     var dayBirth= (birthIpt.value.substring(8, 10));
     var monthBirth= (birthIpt.value.substring(5, 7));
     var yearBirth= (birthIpt.value.substring(0, 4));
     newBirthFormat= monthBirth + '/' + dayBirth + '/' + yearBirth;
+}
+
+birthIpt.onblur= function(){
+    var yearBirthCompa= (birthIpt.value.substring(0, 4));
 
     if (birthIpt.value===''){
         failBirthSpn.innerText= 'You must fill in the birthdate field';
-    } else if (yearBirth<=(dateYearCompa-70) || yearBirth>(dateYearCompa-13)){
-        failBirthSpn.innerText= 'Your age range is not valid';
+    } else if (yearBirthCompa<=(dateYearCompa-70) || yearBirthCompa>(dateYearCompa-1)){
+        failBirthSpn.innerText= 'Year of birth must be different from the current one';
     } else{
         failBirthSpn.innerText= '';
     }
+    dateFormatting(birthIpt.value);
 }
 
 birthIpt.onfocus= function(){
@@ -319,7 +316,7 @@ addressIpt.onblur= function(){
         failAddressSpn.innerText= 'There must be a space in the address';
     } else if (validateInputCharacter(addressIpt.value)===true){
         failAddressSpn.innerText= 'Especial characters are not allowed in address';
-    } else if (addressIpt.value.length<5 || addressIpt.value.length>26){
+    } else if (addressIpt.value.length<4 || addressIpt.value.length>26){
         failAddressSpn.innerText= 'Invalid number of characters for address';
     } else{
         failAddressSpn.innerText= '';
@@ -347,7 +344,7 @@ locationIpt.onblur= function(){
         failLocationSpn.innerText= 'You must enter numbers in the location';
     } else if (validateInputCharacter(locationIpt.value)===true){
         failLocationSpn.innerText= 'Especial characters are not allowed in location';
-    } else if (locationIpt.value.length<=3 || locationIpt.value.length>20){
+    } else if (locationIpt.value.length<4 || locationIpt.value.length>20){
         failLocationSpn.innerText= 'Invalid number of characters for location';
     } else{
         failLocationSpn.innerText= '';
@@ -444,8 +441,10 @@ passTwoIpt.onblur= function(){
     } else if (passTwoIpt.value.length<8 || passTwoIpt.value.length>16){
         failPassTwoSpn.innerText= 'Invalid number of characters for password';
     } else if (passOneIpt.value != passTwoIpt.value){
+        failPassOneSpn.innerText= 'Passwords do not match';
         failPassTwoSpn.innerText= 'Passwords do not match';
     } else{
+        failPassOneSpn.innerText= '';
         failPassTwoSpn.innerText= '';
     }
 }

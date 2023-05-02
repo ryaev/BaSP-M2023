@@ -36,5 +36,14 @@ Click on the following link to access access the Sign Up [Mega Rocket - Sign Up]
 
 Click on the following link to access access the Login [Mega Rocket - Login](https://ryaev.github.io/BaSP-M2023/Week-06/views/login.html).
 
+## Week 07
+This week data is sent from the Sign Up and Login form to the server using Fetch, with the functionality of showing the different errors that said API contains, additionally data sent successfully from the Sign Up is stored in the localStorage and it is verified that they are loaded correctly to the reload the web page.
+
+Click on the following link to access access the Landing [Mega Rocket - Landing](https://ryaev.github.io/BaSP-M2023/Week-06/views/index.html).
+
+Click on the following link to access access the Sign Up [Mega Rocket - Sign Up](https://ryaev.github.io/BaSP-M2023/Week-06/views/sign-up.html).
+
+Click on the following link to access access the Login [Mega Rocket - Login](https://ryaev.github.io/BaSP-M2023/Week-06/views/login.html).
+
 # License
 Copyright © 2022 Radium Rocket. All rights reserved.

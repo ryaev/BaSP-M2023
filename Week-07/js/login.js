@@ -1,3 +1,4 @@
+var emailExpression= /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/;
 var urlLogin= 'https://api-rest-server.vercel.app/login';
 var validatedLogin= false;
 
@@ -12,11 +13,43 @@ function getData(url){
     });
 }
 
+function getData(url){
+    fetch(url)
+    .then(function(response){
+        if(response.ok){
+            return response.json();
+        } else{
+            return response.json().then(error => {
+                throw new Error(JSON.stringify(error));
+            });
+        }
+    })
+    .then(function(data){
+        var successInfo= JSON.parse(JSON.stringify(data));
+
+        alert('  '+successInfo.msg+'  ');
+    })
+    .catch(function(error){
+        var invalidInfo= JSON.parse(error.message);
+        var invalidError = invalidInfo.msg;
+        var invalidErrorsVar = invalidInfo.errors;
+        
+        if (failEmailSpn.innerText===''){
+            alert(invalidError);
+        } else{
+            alert('  Error in user Log In, details:  '+'\n'+'\n'
+            +'- '+invalidErrorsVar[0].msg);
+        }
+    })
+}
+
 function validateLogin(){
     if(emailIpt.value!="" && failEmailSpn.innerText==="" && passIpt.value!="" && failPassSpn.innerText===""){
-        validatedLogin= true;
+        return validatedLogin= true;
     } else{
-        alert('Login error, please check the data entered.');
+        emailIpt.onblur();
+        passIpt.onblur();
+        return validatedLogin= false;
     }
 }
 
@@ -31,14 +64,8 @@ loginBtn.onclick= function(){
     validateLogin();
     urlLogin = 'https://api-rest-server.vercel.app/login?email='+emailIpt.value+'&password='+passIpt.value;
 
-    if(validatedLogin===true){
-        getData(urlLogin).then((jsonData) => {
-        alert(jsonData.msg);
-        });
-    }
+    getData(urlLogin);
 }
-
-var emailExpression= /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/;
 
 /*----------Validation functions----------*/
 
