@@ -414,7 +414,7 @@ passOneIpt.onblur= function(){
         failPassOneSpn.innerText= 'You must enter letters in the password';
     } else if (validatedInputType==='string' && validatedInputNumber===false){
         failPassOneSpn.innerText= 'You must enter numbers in the password';
-    } else if (passOneIpt.value.length<8 || passOneIpt.value.length>16){
+    } else if (passOneIpt.value.length<8 || passOneIpt.value.length>20){
         failPassOneSpn.innerText= 'Invalid number of characters for password';
     } else{
         failPassOneSpn.innerText= '';
@@ -438,7 +438,7 @@ passTwoIpt.onblur= function(){
         failPassTwoSpn.innerText= 'You must enter letters in the password';
     } else if (validatedInputType==='string' && validatedInputNumber===false){
         failPassTwoSpn.innerText= 'You must enter numbers in the password';
-    } else if (passTwoIpt.value.length<8 || passTwoIpt.value.length>16){
+    } else if (passTwoIpt.value.length<8 || passTwoIpt.value.length>20){
         failPassTwoSpn.innerText= 'Invalid number of characters for password';
     } else if (passOneIpt.value != passTwoIpt.value){
         failPassOneSpn.innerText= 'Passwords do not match';

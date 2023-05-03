@@ -3,17 +3,6 @@ var urlLogin= 'https://api-rest-server.vercel.app/login';
 var validatedLogin= false;
 
 function getData(url){
-    return fetch(url)
-    .then((response) => response.json())
-    .then((jsonData=>{
-        return jsonData;
-    }))
-    .catch((error) => {
-        return console.log(error);
-    });
-}
-
-function getData(url){
     fetch(url)
     .then(function(response){
         if(response.ok){
@@ -33,12 +22,18 @@ function getData(url){
         var invalidInfo= JSON.parse(error.message);
         var invalidError = invalidInfo.msg;
         var invalidErrorsVar = invalidInfo.errors;
+        var alertContent= '';
         
-        if (failEmailSpn.innerText===''){
+        if (failEmailSpn.innerText===''&&failPassSpn.innerText===''){
+            alert(invalidError);
+        } else if(failPassSpn.innerText==='You must enter numbers in the password'||failPassSpn.innerText==='You must enter letters in the password'){
             alert(invalidError);
         } else{
+            for (var counter= 0; counter < invalidErrorsVar.length; counter++){
+                alertContent= alertContent+'- '+(invalidErrorsVar[counter].msg)+'\n';
+            }
             alert('  Error in user Log In, details:  '+'\n'+'\n'
-            +'- '+invalidErrorsVar[0].msg);
+            +alertContent);
         }
     })
 }
@@ -90,6 +85,17 @@ function validateInputNumber(inputValue1){
     return inputNumber;
 }
 
+function validateInputCharacter(inputValue2){
+    var inputCharacter= false;
+    var charFilter= '!"#$%&()*+,-./:;<=>?@[\]^_`{|}~';
+    	
+    for (var i=0; i<inputValue2.length; i++)
+    if (charFilter.indexOf(inputValue2.charAt(i)) != -1){
+        inputCharacter= true;
+    }
+    return inputCharacter;
+}
+
 /*----------E-mail validation----------*/
 
 
@@ -122,12 +128,14 @@ passIpt.onblur= function(){
     
     if (passIpt.value===''){
         failPassSpn.innerText= 'You must fill in the password field';
+    } else if (passIpt.value.length<8 || passIpt.value.length>20){
+        failPassSpn.innerText= 'Invalid number of characters for password';
     } else if (validatedInputType==='number' && validatedInputNumber===true){
         failPassSpn.innerText= 'You must enter letters in the password';
     } else if (validatedInputType==='string' && validatedInputNumber===false){
         failPassSpn.innerText= 'You must enter numbers in the password';
-    } else if (passIpt.value.length<8 || passIpt.value.length>16){
-        failPassSpn.innerText= 'Invalid number of characters for password';
+    } else if (validateInputCharacter(passIpt.value)===true){
+        failPassSpn.innerText= 'Especial characters are not allowed in password';
     } else{
         failPassSpn.innerText= '';
     }
